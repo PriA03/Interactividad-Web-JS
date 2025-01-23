@@ -90,17 +90,36 @@ function buyTickets(eventsList, eventDesired){
 
 }
 
-let eventsCreated = addEvents();
-viewEvents(eventsCreated);
 
-let buy = prompt('Indique el nombre del evento al que desea asistir');
+let eventsCreated = addEvents();
+let allEvents = viewEvents(eventsCreated);
+
+
+
+
+let buy = prompt('Desea comprar tiquetes?. Ingrese: 1 (Sí) o 2 (No)');
 
 switch (buy){
 
-}
-let eventDesired = prompt('Indique el nombre del evento al que desea asistir');
+    case 1: 
+    
+    allEvents;
+    let eventDesired = prompt('Indique el nombre del evento al que desea asistir. Debe escribirlo tal y como se mostraba en la lista');
+    let reloadEvents = buyTickets(eventDesired, allEvents);
 
-let reloadEvents = buyTickets()
+    case 2: 
+    
+    console.log('Muchas gracias por visitarnos!');
+    break;
+
+    default:
+    console.log('Has elegido una opción no existente');
+
+}
+
+
+
+
 
 
 
