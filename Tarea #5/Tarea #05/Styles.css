@@ -1,0 +1,52 @@
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #8363e9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+/* --- New styles --- */
+
+.transLeft {
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+
+.transLeft:hover {
+  transform: translatex(-20px);
+  -webkit-transform: translatex(-20px);
+  -moz-transform: translatex(-20px);
+}
+
+
+
+
+.alert {
+  opacity: 1;
+  transform: translateX(0);
+}
