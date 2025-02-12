@@ -19,14 +19,3 @@ setInterval(() => {
    
   }, 1000);
 
-
-
-  const surprise2 = document.getElementById('surprise');
-
-
-let index2 = 0;
-
-setInterval(() => {
-    index = (index2 + 1) % colors.length; 
-   
-  }, 1000);
