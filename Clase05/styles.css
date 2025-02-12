@@ -1,0 +1,109 @@
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border-width: 5px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse button {
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    border: 5px solid;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    background: hsla(152, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    transition: 0.5s;
+}
+
+
+
+
+
+.surprise:hover {
+    animation: surprise .8s infinite;
+    /*animation-name: surprise;
+    -webkit-animation-name: surprise;
+    -moz-animation-name: surprise;
+    animation-duration: .8s;
+    -webkit-animation-duration: .8s;
+    -moz-animation-duration: .8s;*/
+}
+
+@keyframes surprise {
+    0% {
+        transform: rotate(0deg) scale(1, 1);
+        ;
+    }
+
+    10% {
+        transform: rotate(7deg) scale(2, 2);
+    }
+
+    20% {
+        transform: rotate(-7deg) scale(2, 2);
+    }
+
+    30% {
+        transform: rotate(7deg) scale(2, 2);
+    }
+
+    40% {
+        transform: rotate(-7deg) scale(2, 2);
+    }
+
+    50% {
+        transform: rotate(7deg) scale(2, 2);
+    }
+
+    60% {
+        transform: rotate(-7deg) scale(2, 2);
+    }
+
+    70% {
+        transform: rotate(7deg) scale(2, 2);
+    }
+
+    80% {
+        transform: rotate(-7deg) scale(2, 2);
+    }
+
+    90% {
+        transform: rotate(7deg) scale(2, 2);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1, 1);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container .surprise {
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    padding: 10px;
+    border-radius: 5px;
+}
