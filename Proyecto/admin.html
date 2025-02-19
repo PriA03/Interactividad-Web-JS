@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Admin</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="img/theater.png" type="image/png">
+
+</head>
+
+<body  style="background: linear-gradient(45deg, hsla(13, 89%, 59%, 1) 0%, hsla(44, 77%, 56%, 1) 100%, hsla(32, 98%, 50%, 1) 100%);">
+
+
+    <nav id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Teatro - Sueños de Colores <i class="fa-solid fa-video"></i></a>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="/index.html#us">Nosotros</a></li>
+                <li><a class="nav-link" href="/index.html#events">Eventos</a></li>
+                <li><a class="nav-link no-scroll" href="/admin.html">Administrador</a></li>
+                <li><a class="nav-link" href="/index.html#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container-admin" style="margin-top: 8%;">
+        <h2 style="padding-top:5%; padding-bottom:5%;">Nuevos Eventos</h2>
+        <form id="addingEvents">
+            <div class="row-admin">
+                <div class="col-2">
+                    <label for="eventName" class="form-label">Nombre del Evento</label>
+                </div>
+                <div class="col-4">
+                    <input id="eventName" class="form-control" type="text" placeholder="Evento">
+                </div>
+            </div>
+            <br>
+            <div class="row-admin">
+                <div class="col-2">
+                    <label for="schedule" class="form-label">Horario del Evento</label>
+                </div>
+                <div class="col-4">
+                    <input id="schedule" class="form-control" type="text" placeholder="Fecha (dd/mm/aaaa) - Hora (am/pm)">
+                </div>
+            </div>
+            <br>
+            <div class="row-admin">
+                <div class="col-2">
+                    <label for="seats" class="form-label">Asientos disponibles</label>
+                </div>
+                <div class="col-4">
+                    <input id="seats" class="form-control" type="number" placeholder="Número de asientos">
+                </div>
+         </div>
+            <br>
+            <div class="row-admin">
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <button type="submit" class="btn">Registrar</button>
+                </div>
+                <div class="col-2" ></div>
+            </div>
+        </form>
+
+        <div style="border-bottom:5px solid #E1D1B2; margin-bottom: 30px; padding-top: 20px;"></div>
+
+        <ul class="list-group list-group-flush" id="eventsList"></ul>
+
+        <div id="notification-container"></div>
+    </div>
+
+    <footer class="bg-light py-5" style="margin-top: 40px;">
+        <div class="container">
+            <div class="small text-center text-muted">&copy; 2023 - Company Name</div>
+        </div>
+    </footer>
+
+
+    <script src="events-manager.js"></script>
+    <script src="https://kit.fontawesome.com/8fce08db21.js" crossorigin="anonymous"></script>
+    <script>
+        updateEventsList(true);
+    </script>
+</body>
+
+</html>
